@@ -9,7 +9,7 @@ services:
       - "6333:6333"   # API REST
       - "6334:6334"   # gRPC
     volumes:
-      - ./qdrant_data:/qdrant/storage    # volume bind no host
+      - ./data:/qdrant/storage    # volume bind no host
 
     environment:
       QDRANT__SERVICE__GRPC_PORT: 6334
